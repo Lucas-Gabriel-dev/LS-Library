@@ -1,0 +1,105 @@
+#ContainerAddBook{
+    font-size: clamp(1px, 1.5rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+    width: 90%;
+}
+
+#ContainerAddBook form{
+    margin-top: 2%;
+}
+
+#ContainerAddBook input{
+    height: clamp(10px, 37.1rem, 3vw);
+}
+
+#ContainerAddBook input,
+#ContainerAddBook textarea{
+    margin-bottom: 7%;
+
+    border: #9C4432 1px solid;
+    border-radius: 6px;
+
+    padding: 2%;
+    width: 100%;
+}
+
+#ContainerAddBook textarea{
+    height: 50%;
+}
+
+#ButtonSendAlert,
+#ButtonDeleteAlert,
+#ButtonDelete,
+#ContainerAddBook #ButtonSend{
+    font-size: clamp(1px, 2.2rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    
+    border-color: #DD6E4F;
+    border-radius: 6px;
+
+    transition: .2s;
+    cursor: pointer;
+
+    text-align: center;
+
+    color: #F0EDE2;
+    background-color: #DD6E4F;
+    
+    height: clamp(10px, 38.5rem, 4vw);
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+#ButtonSendAlert:hover,
+#ContainerAddBook #ButtonSend:hover{
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+.ClassBookCover{
+    font-size: 90px !important;
+    border: none !important;
+}
+
+#ButtonDeleteAlert,
+#ButtonDelete{
+    background-color: rgb(211, 55, 55);
+}
+
+#ButtonDeleteAlert:hover,
+#ButtonDelete:hover{
+    border: 1px solid rgb(211, 55, 55);
+    background-color: #F0EDE2;
+    color: rgb(211, 55, 55);
+}
+
+#AlertMessage{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(5px, 2rem, 2vw);
+    text-decoration: none;
+    text-align: center;
+    display: none;
+
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+
+    padding: 5%;
+    width: 40vw;
+
+    transition: .2s;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #da1a2c;
+    border-radius: 6px;
+}
+
+#AlertMessage p{
+    margin-bottom: 5%;
+}
+
+#AlertMessage button{
+    width: 30%;
+}

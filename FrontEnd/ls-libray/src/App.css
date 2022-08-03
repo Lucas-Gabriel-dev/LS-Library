@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+}
+
+header,
+.Header{
+    display: flex;
+}
+
+header{
+    background-color: #F0EDE2;
+
+    justify-content: space-between;
+
+    padding: 2% 10% 2% 5%;
+
+    border-bottom: 1px solid #9C4432;
+}
+
+.Header{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1px, 3.6rem, 2vw);
+    align-items: center;
+    color: #9C4432;
+    white-space: nowrap;
+    max-width: 100%;
+
+    gap: 5%;
+}
+
+.Header .LogoImg{
+    width: 19%;
+}
+
+.Buttons{
+    display: flex;
+    white-space: nowrap;
+}
+
+.Buttons button,
+.Buttons a{
+    font-size: clamp(1px, 2.5rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    align-items: center;
+
+    color: #DD6E4F;
+
+    transition: .2s;
+
+    cursor: pointer;
+
+    padding: 1.3rem 1.6rem;
+
+    margin-right: 5%;
+
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#Logout{
+    display: inline;
+    background-color: rgb(211, 55, 55);
+    border-radius: 8px;
+    color: #F0EDE2;
+
+    margin-left: 2%;
+}
+
+#Logout:hover{
+    background-color: #F0EDE2;
+    border-color: rgb(211, 55, 55);
+    color: rgb(211, 55, 55);
+}
+
+.Buttons .Button:hover{
+    color: #9C4432;
+    border-radius: 8px;
+
+    margin-left: 0px;
+}
+
+.Buttons .Button.Detach{
+    background-color: #DD6E4F;
+    color: #F0EDE2;
+
+    border-radius: 8px;
+
+    margin-right: 0px;
+}
+
+.Buttons .Button.Detach:hover{
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+@media (max-width: 650px){
+    header{
+        justify-content: space-around;
+    }
+    
+
+    .Buttons a,
+    .Buttons button{
+        padding: 4%;
+    }
+
+    .Buttons .Button.Detach,
+    #Logout{
+        border-radius: 3px;
+    }
+}

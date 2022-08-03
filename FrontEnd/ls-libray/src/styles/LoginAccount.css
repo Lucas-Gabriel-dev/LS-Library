@@ -1,0 +1,104 @@
+#ContainerRegister #ContentRegister form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+}
+
+#ContainerRegister #ContentRegister input{
+    font-size: clamp(1px, 1.5rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+    width: 100%;
+    height: clamp(10px, 37.1rem, 3vw);
+    
+    margin-bottom: 7%;
+
+    border: #9C4432 1px solid;
+    border-radius: 6px;
+
+    padding: 2%;
+}
+
+#ContainerRegister #ContentRegister #ButtonSend,
+#UserLogin a{
+    font-size: clamp(1px, 2.2rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    
+    border-color: #DD6E4F;
+    border-radius: 6px;
+
+    transition: .2s;
+    cursor: pointer;
+
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#ContainerRegister #ContentRegister #ButtonSend{
+    color: #F0EDE2;
+    background-color: #DD6E4F;
+    
+    height: clamp(10px, 38.5rem, 4vw);
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+#ContainerRegister #ContentRegister #ButtonSend:hover{
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+#UserLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#UserLogin .PersonIllustration,
+#UserLogin a{
+    align-self: center;
+    justify-content: center;
+    width: 60%;
+}
+
+#UserLogin a{
+    padding: 2%;
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+#UserLogin a:hover{
+    color: #F0EDE2;
+    background-color: #DD6E4F;
+}
+
+@media (max-width: 650px){
+    #ContainerRegister{
+        width: 70%;
+        grid-template-columns: 100%;
+    }
+
+    #ContainerRegister #ContentRegister input{
+        height: clamp(10px, 37.1rem, 5vw);
+        
+        margin-bottom: 7%;
+    
+        padding: 2%;
+    }
+
+    #ContainerRegister #ContentRegister #ButtonSend{
+        height: clamp(10px, 37.1rem, 5vw);
+    }
+
+    #UserLogin .PersonIllustration{
+        display: none;
+    }
+
+    #UserLogin a{
+        width: 100%;
+
+        margin-top: 2%;
+    }
+}

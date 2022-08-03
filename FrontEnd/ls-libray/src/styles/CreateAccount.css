@@ -1,0 +1,124 @@
+#ContainerUser{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: clamp(1px, 1.5rem, 2vw);
+    font-weight: 400;
+
+    margin: auto;
+    display: grid;
+    width: 80%;
+    
+    grid-template-columns: 40% 54%;
+
+    justify-content: space-between;
+}
+
+#ContainerUser #ContentUser .TitleForm{
+    font-size: clamp(1px, 2.2rem, 2vw);
+    text-align: center;
+    margin: 5% 0px;
+    white-space: nowrap;
+}
+
+#ContainerUser #ContentUser form{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;   
+}
+
+#ContainerUser #ContentUser input{
+    font-size: clamp(1px, 1.5rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+    width: 100%;
+    height: clamp(10px, 37.1rem, 3vw);
+    
+    margin-bottom: 7%;
+
+    border: #9C4432 1px solid;
+    border-radius: 6px;
+
+    padding: 2%;
+}
+
+#ContainerUser #ContentUser #ButtonSend,
+#IllustrationArea a{
+    font-size: clamp(1px, 2.2rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    
+    border-color: #DD6E4F;
+    border-radius: 6px;
+
+    transition: .2s;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+#ContainerUser #ContentUser #ButtonSend{
+    color: #F0EDE2;
+    background-color: #DD6E4F;
+    
+    height: clamp(10px, 38.5rem, 4vw);
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+#ContainerUser #ContentUser #ButtonSend:hover{
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+#IllustrationArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#IllustrationArea .PersonIllustration,
+#IllustrationArea a{
+    align-self: center;
+    
+    width: 60%;
+}
+
+#IllustrationArea a{
+    padding: 2.5%;
+    background-color: #F0EDE2;
+    color: #DD6E4F;
+}
+
+#IllustrationArea a:hover{
+    color: #F0EDE2;
+    background-color: #DD6E4F;
+}
+
+@media (max-width: 650px){
+    #ContainerUser{
+        width: 70%;
+        grid-template-columns: 100%;
+    }
+
+    #ContainerUser #ContentUser input{
+        height: clamp(10px, 37.1rem, 5vw);
+        
+        margin-bottom: 7%;
+    
+        padding: 2%;
+    }
+
+    #ContainerUser #ContentUser #ButtonSend{
+        height: clamp(10px, 37.1rem, 5vw);
+    }
+
+    #IllustrationArea .PersonIllustration{
+        display: none;
+    }
+
+    #IllustrationArea a{
+        width: 100%;
+
+        margin-top: 2%;
+    }
+}

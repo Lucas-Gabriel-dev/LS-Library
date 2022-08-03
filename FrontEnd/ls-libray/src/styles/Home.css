@@ -1,0 +1,69 @@
+#TitleHome{
+    font-size: clamp(1px, 2.5rem, 2vw);;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 400;
+    
+    text-align: center;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+#Content{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 31% 31% 31%;
+
+    justify-content: space-between;
+}
+
+#AllBooksView{
+    font-size: clamp(1px, 1.7rem, 2vw);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+
+    border: 1px solid #9C4432;
+    border-radius: 9px;
+
+    padding: 5% 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 80%;
+
+    transition: .2s;
+}
+
+#CoverAndTitle{
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+}
+
+#ButtonHomeRedirectBook{
+    font-size: clamp(1px, 2.2rem, 2vw);
+    font-family: 'Ubuntu', sans-serif;
+    
+    background-color: #DD6E4F;
+    color: #F0EDE2;
+    border-color: #DD6E4F;
+    
+    border-radius: 6px;
+
+    transition: .2s;
+    cursor: pointer;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    padding: 2%;
+}
+
+#ButtonHomeRedirectBook:hover{
+    color: #DD6E4F;
+    background-color: #F0EDE2;
+}
